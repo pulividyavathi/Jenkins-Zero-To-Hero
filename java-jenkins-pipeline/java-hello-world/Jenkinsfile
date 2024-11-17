@@ -19,7 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the project using Maven
-                dir('java-jenkins-pipeline/java-hello-world') {  // Navigate to the correct directory
+                dir('java-jenkins-pipeline/java-hello-world') {  
                     sh 'mvn clean install'
                 }
                  
@@ -29,7 +29,10 @@ pipeline {
         stage('Test') {
             steps {
                 // Run tests (JUnit)
-                sh 'mvn test'
+                dir('java-jenkins-pipeline/java-hello-world') {   
+                    sh 'mvn test'
+                }
+                 
             }
         }
 
