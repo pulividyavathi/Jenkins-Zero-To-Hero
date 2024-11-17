@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from the forked repository
-                git 'https://github.com/pulividyavathi/Jenkins-Zero-To-Hero.git'
+                // git 'https://github.com/pulividyavathi/Jenkins-Zero-To-Hero.git'
                 git url: 'https://github.com/pulividyavathi/Jenkins-Zero-To-Hero/tree/main/java-jenkins-pipeline/java-hello-world', branch: 'main'
 
             }
