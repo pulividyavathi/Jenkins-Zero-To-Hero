@@ -7,7 +7,7 @@ pipeline {
                 // Checkout the code from the forked repository
                 // git 'https://github.com/pulividyavathi/Jenkins-Zero-To-Hero.git'
                 git credentialsId: '966b5f41-ab87-46a3-b2c1-756c0eb56c2b', 
-                url: 'https://github.com/pulividyavathi/Jenkins-Zero-To-Hero/tree/main/java-jenkins-pipeline/java-hello-world',
+                url: 'https://github.com/pulividyavathi/Jenkins-Zero-To-Hero.git',
                 branch: 'main'
                 // git url: 'https://github.com/pulividyavathi/Jenkins-Zero-To-Hero/tree/main/java-jenkins-pipeline/java-hello-world', branch: 'main'
 
